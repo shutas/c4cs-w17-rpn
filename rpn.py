@@ -21,6 +21,13 @@ def calculate(arg):
 			
 			stack.append(result)
 	return stack.pop()
+
+def lessenCoverage():
+	print("This should lower the coverage percentage")
+	print("Because new codeis added.")
+	print("But I never execute this.")
+	print(":)")
+
 def main():
 	while True:
 		result = calculate(input('rpn calc> '))
