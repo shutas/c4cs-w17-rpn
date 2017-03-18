@@ -4,7 +4,7 @@ python:
 install: pip install coveralls
 script: 
   - make
-  - coverage run rpn.py
+  - coverage run -m unittest
 after_success:
   coveralls
 
