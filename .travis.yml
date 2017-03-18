@@ -2,7 +2,9 @@ language: python
 python:
   - "3.5"
 install: pip install coveralls
-script: coverage run make
+script: 
+  - make
+  - coverage run rpn.py
 after_success:
   coveralls
 
